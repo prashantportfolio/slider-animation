@@ -1,0 +1,275 @@
+* {
+	margin: 0;
+	padding: 0;
+	object-fit: cover;
+	font-family: sans-serif;
+}
+html body {
+    background-color: #000;
+    user-select: none;
+}
+.animated-section-wrapper {
+    padding: 20px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.puma-and-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.hybrid-logo {
+    text-align: right;
+}
+.bottom-logo-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    padding: 0px 20px 0px 100px;
+}
+.bottom-logo-wrapper .tagline {
+    float: left;
+    font-family: 'Coda', cursive;
+    font-style: italic;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 46px;
+    display: none;
+}
+.bottom-logo-wrapper .tagline span {
+    font-weight: bold;
+    font-family: inherit;
+    margin: 0 3px;
+}
+.bottom-logo-wrapper .shop-now {
+    float: right;
+    display: none;
+}
+.bottom-logo-wrapper .shop-now a {
+    background: #fff;
+    padding: 12px 50px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+}
+.bottom-logo-wrapper .shop-now a span.triangle {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #000;
+    border-right: 8px solid #000;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+    position: absolute;
+    right: 4px;
+    top: 5px;
+}
+.bubble {
+    border-radius: 50%;
+    position: absolute;
+}
+.bubble.first-bubble {
+    background: #08c7b5;
+    width: 200px;
+    height: 200px;
+    top: -20%;
+    transform: translateY(-50%);
+}
+.bubble.second-bubble {
+    height: 170px;
+    width: 170px;
+    background: #f20e5c;
+    bottom: -40px;
+    left: -190px;
+}
+.bubble.overlapped-bubble, .bubble.third-bubble, .bubble.white-bubble {
+    width: 150px;
+    height: 150px;
+}
+.side-bubble-wrapper {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+.bubble.overlapped-bubble {
+    background: #08c7b5;
+    overflow: hidden;
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    z-index: 10;
+}
+.bubble.third-bubble {
+    background: #f20e5c;
+    right: -50px;
+    top: 140px;
+} 
+.bubble.white-bubble {
+    background: #fff;
+    position: absolute;
+    right: -70px;
+}
+.bubble.big-pink-bubble, .bubble.big-green-bubble {
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bubble.big-pink-bubble {
+    background: #f20e5c;
+    left: 0;
+    opacity: 0;
+}
+.bubble.big-green-bubble {
+    background: #08c7b5;
+    right: 0px;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 0;
+}
+.bubble.big-white-bubble {
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    left: -355px;
+    opacity: 0;
+}
+.center-animation {
+    max-width: 956.19px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.swiper-container {
+    width: 300px;
+    height: 300px;
+}
+.slider-section {
+    position: relative;
+    bottom: -1000px;
+}
+.swiper-container .swiper-slide img {
+    width: 100%;
+    transform: scale(1.15);
+}
+.swiper-pagination {
+    display: none;
+}
+.better-experience {
+    display: none;
+}
+.animated-section-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+}
+.animated-section-wrapper .swiper-pagination-bullet-active {
+    color:#fff;
+    background: #08c7b5;
+}
+.animated-section-wrapper .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    margin: 0px 12px;
+    outline: none;
+}
+.animated-section-wrapper .swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translateX(-50%);
+    z-index: 10;
+    left: 50%;
+    bottom: 70px;
+}
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets:before {
+    content: '';
+    width: 95px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 18px;
+    top: 9px;
+    z-index: -1;
+}
+.green-bubble-text{
+    color: #fff;
+    font-family: 'Coda', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: absolute;
+    left: -192px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+} 
+.pink-bubble-text {
+    color: #ffffff;
+    font-family: 'Coda', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    position: absolute;
+    right: -179px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    opacity: 0;
+}
+p.slider-notification {
+    text-align: center;
+    position: relative;
+    bottom: 39px;
+    z-index: 1;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    font-size: 11px;
+}
+.slide-content-section {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 200px;
+}
+.slide-content-section p {
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.slide-content-section h4 {
+    font-family: 'Coda', cursive;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 22px;
+    position: relative;
+}
+.slide-content-section h4:after {
+    content: '';
+    width: 180px;
+    height: 2px;
+    background: #f20e5c;
+    position: absolute;
+    left: -50px;
+    bottom: -12px;
+}
+.first-content, .second-content, .third-content {
+    display: none;
+}
+.visible {
+    display: block !important; /* To overight the existing css while adding this class dynamically*/
+}
+.swiper-pagination-bullet {
+    transition: 0.5s all linear;
+}

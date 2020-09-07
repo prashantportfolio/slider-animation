@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000">
+	<title>Thinksys Task By Prashant</title>
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/jpg"/><!--Favicon-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" href="css/swiper.min.css"><!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"><!--Animate.CSS -->
+	<link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet"><!-- Font family -->
+</head>
+<body>
+    <section class="animated-section-wrapper"><!-- Slider Wrapper Starts Here -->
+      <div class="puma-and-logo">
+      	<img src="assets/and-logo.png" alt=""><!-- Puma & Logo -->
+      </div>
+      <div class="bubble first-bubble"></div><!-- Top left green bubble -->
+      <div class="hybrid-logo"><!-- Puma Hubrid Logo -->
+      	<a href="#"><img src="assets/hybrid-logo.png"></a>
+      </div><!-- Puma Hubrid Logo -->
+      <div class="center-animation"><!--++++++++++++++++++++++++ MAIN ANIMATION SECTION +++++++++++++++++++++++-->
+      	<div class="green-bubble-text">CUSHIONING</div>
+      	<div class="bubble big-green-bubble"><!-- Big Animated Green Bubble -->
+      		<div class="bubble big-white-bubble"></div>
+      	</div>
+      	<div class="pink-bubble-text">ENERGY RETURN</div>
+  		<div class="bubble big-pink-bubble"></div><!-- Big Animated Pink Bubble -->
+      	<div class="slider-section">
+  		 <!-- Swiper -->
+		  <div class="swiper-container"><!-- Slider Wrapper Section -->
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><img src="assets/shoe1.png" alt=""></div>
+		      <div class="swiper-slide"><img src="assets/shoe1.png" alt=""></div>
+		      <div class="swiper-slide"><img src="assets/shoe1.png" alt=""></div>
+		    </div>
+		  </div><!-- Slider Wrapper Section -->
+		  <p class="slider-notification">USE THE SLIDER <br> TO VEW MORE</p>
+		  <div class="slide-content-section">
+		  	<div class="content first-content visible"><!-- Slide Content 1 -->
+		  		<h4>NEW TECHNOLOGY</h4>
+		  		<p>Hybrid is an entirely new technology all its own. The combination of tow foams NERGY beads and IGINITE FOAM. make for our most supportive running shoe yet</p>
+		  	</div><!-- Slide Content 1 Ends here -->
+		  	<div class="content second-content"><!-- Slide Content 2 -->
+		  		<h4>CUSHIONING</h4>
+		  		<p>NRGY brads offer superior cushioning from heel to toe so you can power through your run.</p>
+		  	</div><!-- Slide Content 2 Ends here -->
+		  	<div class="content third-content"><!-- Slide Content 3 -->
+		  		<h4>ENERGY RETURN</h4>
+		  		<p>IGNITE FOAM provides high energy returns.</p>
+		  	</div><!-- Slide Content 3 Ends here -->
+		  </div>
+      	</div>
+      </div><!--++++++++++++++++++++++++ MAIN ANIMATION SECTION ENDS HERE +++++++++++++++++++++++-->
+      <div class="side-bubble-wrapper"><!-- Two Overlapped Bubbles Present at top Right corner -->
+	      <div class="bubble overlapped-bubble">
+	      	<div class="bubble white-bubble"></div>
+	      </div>
+	      <div class="bubble third-bubble"></div>
+	  </div><!-- Two Overlapped Bubbles -->
+	  <!-- Add Pagination -->
+	  <div class="swiper-pagination dotstyle dotstyle-dotmove"></div><!-- Pagination Section -->
+	  <div class="bottom-logo-wrapper clearfix"><!-- Bottom Bar Section -->
+	  	<div class="bubble second-bubble"></div>
+	  	<div class="tagline">
+	  		FOREVER<span>FASTER</span><span><img src="assets/puma-logo.png" alt=""></span>
+	  	</div>
+
+	  	<div class="shop-now"><!-- Shop Now Button -->
+		  	<a href="https://in.puma.com/" target="_blank" class="shop-now-btn" aria-label="shop now on puma.com (opens in a new tab)">SHOP NOW
+	           <span class="triangle"></span>
+		  	</a>
+  		</div><!-- Shop Now Button -->
+	  </div><!-- Bottom Bar Section -->
+	</section>
+	<p class="better-experience">For Good Experience, Don't Rotate Your Device. Please use normal mode!</p><!--Screen Rotate Message -->
+    
+    <!-- Swiper JS -->
+  	<script src="js/swiper.min.js"></script>
+  	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<script>
+  	/* To Change the content on change of Slides */
+  	function changeSliderContent(index){
+      if(index === 0) {
+        $('.content').removeClass('visible');
+        $('.first-content').addClass('visible');
+      } else if(index === 1) {
+        $('.content').removeClass('visible');
+        $('.second-content').addClass('visible');
+      } else if(index === 2) {
+        $('.content').removeClass('visible');
+        $('.third-content').addClass('visible');
+      } else{
+        return null;
+      } 
+    }
+    var swiper = new Swiper('.swiper-container', {
+    	on:{
+    		slideChange:function(event){
+    			var index = $(this)[0].activeIndex;
+    			changeSliderContent(index);
+    		}
+    	},
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+	</script>
+	<script src="js/advantage.js"></script><!-- Custom Javascript File -->
+</body>
+</html>
